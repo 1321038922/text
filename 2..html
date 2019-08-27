@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 58px;
+            height: 250px;
+        }
+
+        .box {
+            animation: myfirst 1s infinite;
+            -webkit-animation: myfirst 1s infinite;
+            animation-timing-function: linear;
+            -webkit-animation-timing-function: linear;
+            /* transition: transform linear 1s; */
+            transform-origin: center 29px;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+        }
+
+        @-webkit-keyframes myfirst {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(45deg);
+            }
+
+            50% {
+                transform: rotate(0deg);
+            }
+
+            75% {
+                transform: rotate(-45deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+
+        /* .container:hover .box {
+            
+        } */
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="./2.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
